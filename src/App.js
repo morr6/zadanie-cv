@@ -3,14 +3,24 @@ import './App.css';
 import { Questionnaire } from './components/questionnaire/questionnaire';
 import { LackOfAccess } from './components/lackOfAccess/lackOfAccess';
 import { CV } from './components/cv/CVContainer';
-import { areAnswersCorrect } from './questionnaireHandling/questionnaireHandling';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faEnvelope,
+  faPhone, 
+  faHome, 
+  faGlobe, 
+  faPlane,
+  faBook,
+  faMusic,
+  faPenFancy 
+} from '@fortawesome/free-solid-svg-icons'
+
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      isCvAvailable: null
+      isCvAvailable: true
     }
   }
 
@@ -21,11 +31,9 @@ class App extends Component {
   renderContent() {
     if (this.state.isCvAvailable === true) {
       return <CV />
-    }
-    else if (this.state.isCvAvailable === false) {
+    } else if (this.state.isCvAvailable === false) {
       return <LackOfAccess />
-    }
-    else {
+    } else {
       return <Questionnaire setCvAccess={ (access) => this.isCvAvailable(access) } />
     }
   }
@@ -40,3 +48,13 @@ class App extends Component {
 }
 
 export default App;
+
+library.add(faEnvelope,
+  faPhone, 
+  faHome, 
+  faGlobe, 
+  faPlane,
+  faBook,
+  faMusic,
+  faPenFancy
+)

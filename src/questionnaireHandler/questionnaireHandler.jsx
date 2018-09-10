@@ -6,8 +6,8 @@ export const questions = [{
         { id: 2, answer: 'Uran' },
         { id: 3, answer: 'Jowisz' }
     ],
-    correctAnswer: 3,
-    answered: null
+    correctAnswerId: 3,
+    answerId: null
 },{
     question: 'Ile planet znajduję się w układzie słonecznym?',
     id: 2,
@@ -16,8 +16,8 @@ export const questions = [{
         { id:2, answer: '8' },
         { id:3, answer: '9' }
     ],
-    correctAnswer: 2,
-    answered: null
+    correctAnswerId: 2,
+    answerId: null
 },{
     question: 'Przyjmiecie mnie do pracy?',
     id: 3,
@@ -26,24 +26,25 @@ export const questions = [{
         { id:2, answer: 'Tak' },
         { id:3, answer: 'Tak' }
     ],
-    correctAnswer: 1,
-    answered: null
+    correctAnswerId: 1,
+    answerId: null
 }];
 
-export const answerTheQuestion = (questionId, answerId) => {
-    questions.map( question => {
-        if (question.id === questionId) {
-            question.answered = answerId
-        }           
-    })
-}   
-
-export const areAnswersCorrect = () => {
-    return questions.map( question => {
-        return question.correctAnswer === question.answered
-    }).every( (element) => {
-        return ( element === true);
-      })
-}
+export const Question = {    
+    answerQuestion: (question, answerId) => {
+      return {
+          ...question,
+          answerId
+      }
+    },
+    areCorrect: (questions) => {
+        return questions.every(question => 
+            question.correctAnswerId === question.answerId
+        )
+    },
+    getQuestionById: (questions, id) => {
+        return questions.find(question => question.id === id);
+    }
+  }
 
 

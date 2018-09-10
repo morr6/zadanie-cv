@@ -1,40 +1,54 @@
 import React, {Component} from 'react'; 
 import { QuestionnaireContainer, Answer, Question } from './questionnaire.s';
-import {questions, 
-        answerTheQuestion,
-        areAnswersCorrect
-} from '../../questionnaireHandling/questionnaireHandling'
+import {questions, Question as QuestionModel } from '../../questionnaireHandler/questionnaireHandler'
 
 export class Questionnaire extends Component {
+    
     constructor() {
         super();
 
         this.state = {
-            activeQuestion: 0,
+            activeQuestionId: 1,
+            questions: questions
         }
     }
-    onAnswerClick(questionId, answerId) {
-        answerTheQuestion(questionId, answerId)
-        if (this.state.activeQuestion < 2){
-            this.setState({ activeQuestion: this.state.activeQuestion + 1 })
-        }
-        else if (this.state.activeQuestion === 2) {
-            this.props.setCvAccess( areAnswersCorrect() )
-        }
+
+    updateQuestionsState(answerId) {
+    
+    }
+
+    onAnswerClick(activeQuestion, answerId) {
+        
+        this.setState({ 
+            questions: this.state.questions.map(
+                question => 
+                question.id === this.state.activeQuestionId ?
+                QuestionModel.answerQuestion(question, answerId) :
+                question
+            )
+        }, () => {
+            if (activeQuestion.id < this.state.questions.length) {
+                this.setState({ activeQuestionId: this.state.activeQuestionId + 1 })
+            } else if (activeQuestion.id === this.state.questions.length) {
+                this.props.setCvAccess( QuestionModel.areCorrect(this.state.questions) )
+            }
+        })
     }
         
+    render() {        
+        const activeQuestion = QuestionModel.getQuestionById(this.state.questions, this.state.activeQuestionId);
 
-    render() {
-        console.log(this.state)
+        console.log(this.state.questions);
+
         return(
             <QuestionnaireContainer>
-                Pytanie {this.state.activeQuestion + 1}/3
+                Pytanie { activeQuestion.id }/{ this.state.questions.length }
                 <Question>
-                    { questions[this.state.activeQuestion].question }
+                    { activeQuestion.question }
                 </Question>
-                {   questions[this.state.activeQuestion].answers.map( (answer,key) => 
+                { activeQuestion.answers.map( (answer,key) => 
                         <Answer key={key} 
-                        onClick={ () => this.onAnswerClick(questions[this.state.activeQuestion].id, answer.id) }>
+                        onClick={ () => this.onAnswerClick(activeQuestion, answer.id) }>
                             {answer.answer}
                         </Answer>
                     )
