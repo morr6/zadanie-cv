@@ -6,6 +6,7 @@ export const CvContainer = glamorous.div(props => {
         margin: 'auto',
         background: 'white',
         boxShadow: '5px 5px 30px -5px black',
+        overflow: 'hidden',
 
         '@media screen and (max-width: 1024px)': {
             width: '100%',
