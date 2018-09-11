@@ -68,6 +68,7 @@ export const SocialMedia = glamorous.div(props => {
         width: '40%',
         float: 'left',
         margin: '15% 2.5% 2.5% 5%',
-        fontSize: '11px'
+        fontSize: '11px',
+        paddingBottom: '5%'
     }
 })
