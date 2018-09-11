@@ -1,5 +1,4 @@
 import glamorous from 'glamorous';
-import * as borderImg from '../../../../../../assets/border.png'
 
 export const EducationContainer = glamorous.div(props => {
     return {

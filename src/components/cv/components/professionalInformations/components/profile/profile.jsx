@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = {
     color: '#fdc935',
-    fontSize: '40px'
+    fontSize: matchMedia('(max-width:992px)').matches ? '20px' : '40px'
 }
 
 export class Profile extends Component {

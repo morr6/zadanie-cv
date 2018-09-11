@@ -61,11 +61,12 @@ export const SkillKnowledge = glamorous.div(props => {
 })
 export const SkillName = glamorous.div(props => {
     return {
+        marginLeft: '7.5px',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'left',
         float: 'left',
         height:'100%',
-        width: '40px',
+        width: '32.5px',
     }
 })
