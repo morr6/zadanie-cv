@@ -5,7 +5,8 @@ export const PersonalInformationsContainer = glamorous.div(props => {
         float:'left',
         width: '42%',
         background: '#fdc935',
-        paddingTop: '10%'
+        paddingTop: '7.5%',
+        paddingBottom: '5%'
     }
 })
 
@@ -16,7 +17,7 @@ export const ImageBox = glamorous.div(props => {
         height: '16.5%',
         width: '100%',
 
-        '@media screen and (max-width:992px)': {
+        '@media screen and (max-width:1024px)': {
             height: '13%',
         }
     }
@@ -32,13 +33,13 @@ export const Image = glamorous.img(props => {
 })
 export const Name = glamorous.div(props => {
     return {
-        marginTop: '10%',
+        marginTop: '5%',
         fontWeight: 'bold',
         fontSize: '50px',
         textAlign: 'center',
         color: '#383838',
 
-        '@media screen and (max-width:992px)': {
+        '@media screen and (max-width:1024px)': {
             fontSize: '25px',
             marginTop: '15%'
         }
@@ -50,13 +51,13 @@ export const Profession = glamorous.div(props => {
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
-        height: '4%',
+        height: '35px',
         fontSize: '20px',
         fontStyle: 'italic',
         background: '#383838',
         color: '#fdc935',
         
-        '@media screen and (max-width:992px)': {
+        '@media screen and (max-width:1024px)': {
             fontSize: '15px',
         }
     }
