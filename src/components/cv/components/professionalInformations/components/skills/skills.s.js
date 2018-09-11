@@ -58,7 +58,6 @@ export const SkillBox = glamorous.div(props => {
             margin: '10px 2.5px 10px 5px'
         }
     }
-    }
 })
 export const SkillKnowledge = glamorous.div(props => {
     return {
