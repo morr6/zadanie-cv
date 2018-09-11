@@ -8,7 +8,7 @@ export const PersonalInformationsContainer = glamorous.div(props => {
         paddingTop: '7.5%',
 
         '@media screen and (max-width:980px)': {
-            paddingBottom: '5%'
+            paddingBottom: '10%'
         }
     }
 })
