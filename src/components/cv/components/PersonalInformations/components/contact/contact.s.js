@@ -12,6 +12,10 @@ export const ContactTitle = glamorous.div(props => {
         fontSize: '25px',
         marginTop: '10%',
         width: '100%',
+
+        '@media screen and (max-width:992px)': {
+            fontSize: '15px'
+        }
     }
 })
 export const ContactItem = glamorous.div(props => {
@@ -24,6 +28,10 @@ export const ContactItem = glamorous.div(props => {
         backgroundSize: '30% 30%',
         height: '30px',
         width: '100%',
+
+        '@media screen and (max-width:992px)': {
+            fontSize: '8px'
+        }
         
     }
 })
