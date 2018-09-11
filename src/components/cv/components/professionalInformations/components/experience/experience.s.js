@@ -49,7 +49,7 @@ export const SectionContent = glamorous.div(props => {
         padding: '10px 0 0 20px',
         borderLeft: '2px solid #fdc935',
         
-        '@media screen and (max-width:980px)': {
+        '@media screen and (max-width:480px)': {
             fontSize: '8px',
         },
 
