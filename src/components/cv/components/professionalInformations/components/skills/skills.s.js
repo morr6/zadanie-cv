@@ -55,7 +55,7 @@ export const SkillBox = glamorous.div(props => {
         margin: '20px 2.5px 20px 10px',
 
         '@media screen and (max-width:380px)': {
-            margin: '7.5px 5px 7.5px 10px'
+            margin: '7.5px 5px 5px 10px'
         }
     }
 })
@@ -93,7 +93,8 @@ export const SkillName = glamorous.div(props => {
             fontSize: '8px',
             height: '20px',
             width: '10px',
-            marginLeft: '3px'
+            marginLeft: '3px',
+            background: 'red'
         }
     }
 })
