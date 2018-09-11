@@ -13,7 +13,11 @@ export const SectionIcon = glamorous.div(props => {
         justifyContent: 'center',
         width: '27%',
         height: '35px',
-        float: 'left'
+        float: 'left',
+        
+        '@media screen and (max-width:980px)': {
+            height: '20px',
+        }
     }
 })
 export const SectionName = glamorous.div(props => {
