@@ -5,8 +5,7 @@ export const CvContainer = glamorous.div(props => {
         width: '32.5%',
         margin: 'auto',
         background: 'white',
-        boxShadow: '5px 5px 30px -5px black',
-        height: '100%',
+        boxShadow: '5px 5px 30px -5px black', 
 
         '@media screen and (max-width: 1024px)': {
             width: '100%',

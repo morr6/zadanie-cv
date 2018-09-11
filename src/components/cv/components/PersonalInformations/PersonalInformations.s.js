@@ -6,6 +6,7 @@ export const PersonalInformationsContainer = glamorous.div(props => {
         width: '42%',
         background: '#fdc935',
         paddingTop: '7.5%',
+        height: '100%'
     }
 })
 
