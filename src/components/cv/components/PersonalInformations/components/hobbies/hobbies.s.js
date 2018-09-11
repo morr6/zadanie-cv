@@ -41,7 +41,7 @@ export const HobbyIcon = glamorous.div(props => {
         marginRight: '10%',
 
         '@media screen and (max-width:992px)': {
-            width: '20%',
+            width: '30%',
             height:'50%'
         }
     }
