@@ -33,7 +33,7 @@ export const SectionName = glamorous.div(props => {
         height: '35px',
         fontSize: '20px',
         
-        '@media screen and (max-width:980px)': {
+        '@media screen and (max-width:480px)': {
             height: '20px',
             fontSize: '15px'
         }
