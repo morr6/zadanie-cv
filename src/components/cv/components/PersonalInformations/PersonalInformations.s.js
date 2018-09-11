@@ -15,6 +15,10 @@ export const ImageBox = glamorous.div(props => {
         justifyContent: 'center',
         height: '16.5%',
         width: '100%',
+
+        '@media screen and (max-width:992px)': {
+            height: '13%',
+        }
     }
 })
 export const Image = glamorous.img(props => {
@@ -35,7 +39,8 @@ export const Name = glamorous.div(props => {
         color: '#383838',
 
         '@media screen and (max-width:992px)': {
-            fontSize: '25px'
+            fontSize: '25px',
+            marginTop: '15%'
         }
     }
 })

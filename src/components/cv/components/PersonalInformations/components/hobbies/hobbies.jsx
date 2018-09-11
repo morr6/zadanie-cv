@@ -9,7 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = { 
     color: '#fdc935',
-    fontSize: '30px'
+    fontSize: '30px',
+    '@media screen and (max-width:992px)': {
+        fontSize: '10px'
+    }
 }
 
 export class HobbiesContainer extends Component {
@@ -34,7 +37,7 @@ export class HobbiesContainer extends Component {
                     <HobbyIcon>  
                         <FontAwesomeIcon icon="music" style={iconStyles} />
                     </HobbyIcon> 
-                    <HobbyName  > Music </HobbyName>
+                    <HobbyName> Music </HobbyName>
                 </HobbyBox>
                 <HobbyBox>
                     <HobbyIcon>  
