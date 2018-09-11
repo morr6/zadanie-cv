@@ -9,10 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = { 
     color: '#fdc935',
-    fontSize: '30px',
-    '@media screen and (maxWidth:992px)': {
-        fontSize: '10px'
-    }
+    fontSize: matchMedia('(max-width:992px)').matches ? '10px' : '30px'
 }
 
 export class HobbiesContainer extends Component {
