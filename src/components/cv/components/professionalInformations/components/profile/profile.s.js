@@ -26,7 +26,13 @@ export const SectionName = glamorous.div(props => {
         background: '#383838',
         width: '70%',
         height: '35px',
-        fontSize: '20px'
+        fontSize: '20px',
+        
+        '@media screen and (max-width:980px)': {
+            height: '20px',
+            fontSize: '15px'
+        }
+
     }
 })
 export const SectionContent = glamorous.div(props => {

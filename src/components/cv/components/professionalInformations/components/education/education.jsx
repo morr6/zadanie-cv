@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = {
     color: '#fdc935',
-    fontSize: '45px'
+    fontSize: matchMedia('(max-width:400px)').matches ? '30px' : '40px'
 }
 
 export class Education extends Component {

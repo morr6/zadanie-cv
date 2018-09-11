@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = {
     color: '#fdc935',
-    fontSize: '40px'
+    fontSize: matchMedia('(max-width:400px)').matches ? '30px' : '40px'
 }
 
 export class Experience extends Component {
@@ -20,7 +20,7 @@ export class Experience extends Component {
                 </SectionIcon>
                 <SectionName> EXPERIENCE </SectionName>
                 <SectionContent>
-                    <span style={{position:'relative',left:'-17px'}}> DUGAB YK.CO </span> <br/> 
+                    <span> DUGAB YK.CO </span> <br/> 
                     <span> Junior Web Developer <br/> 2015 </span> <br/>
                     <span>
                         Lorem ipnsum dolor sit amet, consectetur adipiscing
