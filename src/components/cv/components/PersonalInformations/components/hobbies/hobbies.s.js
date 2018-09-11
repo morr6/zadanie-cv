@@ -53,6 +53,7 @@ export const HobbyName = glamorous.span(props => {
         alignItems: 'center', 
         height: '100%',
         width:'50%',
+        fontSize: '12.5px',
 
         '@media screen and (max-width:992px)': {
             fontSize: '10px'

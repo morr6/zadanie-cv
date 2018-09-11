@@ -1,10 +1,10 @@
 import glamorous from 'glamorous';
 import * as borderImg from '../../../../../../assets/border.png'
 
-export const Education = glamorous.div(props => {
+export const EducationContainer = glamorous.div(props => {
     return {
         width: '100%',
-        marginTop: '15%'
+        marginTop: '7.5%'
     }
 })
 export const SectionIcon = glamorous.div(props => {
@@ -12,8 +12,8 @@ export const SectionIcon = glamorous.div(props => {
         display: 'flex',
         alignItems:'center',
         justifyContent: 'center',
-        width: '23%',
-        height: '40px',
+        width: '27%',
+        height: '35px',
         float: 'left'
     }
 })
@@ -25,29 +25,33 @@ export const SectionName = glamorous.div(props => {
         alignItems:'center',
         color: 'white',
         background: '#383838',
-        width: '74%',
-        height: '40px',
-        fontSize: '25px'
+        width: '70%',
+        height: '35px',
+        fontSize: '20px'
     }
 })
 export const SectionContent = glamorous.div(props => {
     return {
-        width: '70%',
-        fontSize: '10.5px',
+        width: '80%',
+        fontSize: '9px',
         textAlign: 'left',
-        margin: '0 auto 0 auto',
+        marginLeft: 'auto',
         padding: '10px 0 0 20px',
         borderLeft: '2px solid #fdc935',
+        
+        '@media screen and (max-width:992px)': {
+            fontSize: '8px',
+        },
 
         '&::before': {
           content: `''`,
           display: 'inline-block',
           background: '#fdc935',
           position: 'relative',
-          left: '-29.5',
+          left: '-28.8',
           top: '5',
-          width: '17px',
-          height: '17px',
+          width: '15px',
+          height: '15px',
           borderRadius: '50%'
           
         }

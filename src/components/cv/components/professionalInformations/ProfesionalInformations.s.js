@@ -40,7 +40,7 @@ export const SectionName = glamorous.div(props => {
 export const SectionContent = glamorous.div(props => {
     return {
         width: '90%',
-        fontSize: '10.5px',
+        fontSize: '9px',
         textAlign: 'left',
         margin: '5% auto'
 

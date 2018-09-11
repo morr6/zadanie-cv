@@ -35,7 +35,7 @@ export const Name = glamorous.div(props => {
     return {
         marginTop: '10%',
         fontWeight: 'bold',
-        fontSize: '45px',
+        fontSize: '50px',
         textAlign: 'center',
         color: '#383838',
 
@@ -52,8 +52,14 @@ export const Profession = glamorous.div(props => {
         justifyContent: 'center',
         width: '100%',
         height: '4%',
+        fontSize: '20px',
+        fontStyle: 'italic',
         background: '#383838',
-        color: '#fdc935' 
+        color: '#fdc935',
+        
+        '@media screen and (max-width:992px)': {
+            fontSize: '15px',
+        }
     }
 })
 

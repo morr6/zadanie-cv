@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Education, 
+import {EducationContainer, 
         SectionIcon,
         SectionName,
         SectionContent} from './education.s'
@@ -10,11 +10,11 @@ const iconStyles = {
     fontSize: '45px'
 }
 
-export class EducationContainer extends Component {
+export class Education extends Component {
 
     render() {
         return(
-            <Education>
+            <EducationContainer>
                 <SectionIcon> 
                         <FontAwesomeIcon icon='graduation-cap' style={iconStyles} />
                 </SectionIcon>
@@ -27,7 +27,7 @@ export class EducationContainer extends Component {
                     <span> 
                         Lorem ipnsum dolor sit amet, consectetur adipiscing
                         elit. Suspendisse non sem ac melus bibendum pulvinar.
-                        Nunc laoreel sed mauris id malesauda cuabiut.
+                        Nunc laoreel sed mauris id malesauda cuabiut. 
                     </span>
                 </SectionContent>
                 <SectionContent>
@@ -38,10 +38,10 @@ export class EducationContainer extends Component {
                     <span> 
                         Lorem ipnsum dolor sit amet, consectetur adipiscing
                         elit. Suspendisse non sem ac melus bibendum pulvinar.
-                        Nunc laoreel sed mauris id malesauda cuabiut.
+                        Nunc laoreel sed mauris id malesauda cuabiut. 
                     </span>
                 </SectionContent>
-            </Education>
+            </EducationContainer>
         )
     }
 }

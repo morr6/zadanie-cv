@@ -1,9 +1,10 @@
 import glamorous from 'glamorous';
 
-export const ProfileContainer = glamorous.div(props => {
+
+export const ExperienceContainer = glamorous.div(props => {
     return {
         width: '100%',
-        marginTop: '10%'
+        marginTop: '7.55%'
     }
 })
 export const SectionIcon = glamorous.div(props => {
@@ -31,14 +32,28 @@ export const SectionName = glamorous.div(props => {
 })
 export const SectionContent = glamorous.div(props => {
     return {
-        width: '90%',
-        fontSize: '10.5px',
+        width: '80%',
+        fontSize: '9px',
         textAlign: 'left',
-        margin: '5% auto',
+        marginLeft: 'auto',
+        padding: '10px 0 0 20px',
+        borderLeft: '2px solid #fdc935',
         
         '@media screen and (max-width:992px)': {
             fontSize: '8px',
-        }
+        },
 
+        '&::before': {
+          content: `''`,
+          display: 'inline-block',
+          background: '#fdc935',
+          position: 'relative',
+          left: '-28.8',
+          top: '5',
+          width: '15px',
+          height: '15px',
+          borderRadius: '50%'
+          
+        }
     }
 })

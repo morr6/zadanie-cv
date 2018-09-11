@@ -4,8 +4,8 @@ import { Questionnaire } from './components/questionnaire/questionnaire';
 import { LackOfAccess } from './components/lackOfAccess/lackOfAccess';
 import { CV } from './components/cv/CVContainer';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faEnvelope,faPhone,faHome,faGlobe,faPlane,faBook,faMusic,
-  faPenFancy,faCog,faUser,faGraduationCap,faDesktop
+import {faEnvelope,faPhone,faHome,faGlobe,faPlaneDeparture,faBook,faMusic,
+  faPenFancy,faCogs,faUser,faGraduationCap,faTv
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -43,6 +43,6 @@ class App extends Component {
 
 export default App;
 
-library.add(faEnvelope, faPhone, faHome,faGlobe,faPlane,
-  faBook,faMusic,faPenFancy,faCog,faUser,faGraduationCap,faDesktop
+library.add(faEnvelope, faPhone, faHome,faGlobe,faPlaneDeparture,
+  faBook,faMusic,faPenFancy,faCogs,faUser,faGraduationCap,faTv
 )

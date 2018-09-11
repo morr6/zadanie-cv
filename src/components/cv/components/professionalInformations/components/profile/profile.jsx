@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Profile, 
+import {ProfileContainer, 
         SectionIcon,
         SectionName,
         SectionContent} from './profile.s'
@@ -7,14 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = {
     color: '#fdc935',
-    fontSize: '45px'
+    fontSize: '40px'
 }
 
-export class ProfileContainer extends Component {
+export class Profile extends Component {
 
     render() {
         return(
-            <Profile>
+            <ProfileContainer>
                 <SectionIcon> 
                         <FontAwesomeIcon icon='user' style={iconStyles} />
                 </SectionIcon>
@@ -32,7 +32,7 @@ export class ProfileContainer extends Component {
                     Donec vehicula magna nec volutpap finibus.
                     Funsce accumsan bibendum quam at pulvinar
                 </SectionContent>
-            </Profile>
+            </ProfileContainer>
         )
     }
 }
