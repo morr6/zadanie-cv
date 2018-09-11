@@ -67,6 +67,6 @@ export const SkillName = glamorous.div(props => {
         justifyContent: 'left',
         float: 'left',
         height:'100%',
-        width: '32.5px',
+        width: '30px',
     }
 })
