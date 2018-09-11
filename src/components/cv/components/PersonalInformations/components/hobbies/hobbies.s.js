@@ -13,7 +13,7 @@ export const HobbiesTitle = glamorous.div(props => {
         marginTop: '10%',
         width: '100%',
 
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             fontSize: '15px'
         }
     }
@@ -40,7 +40,7 @@ export const HobbyIcon = glamorous.div(props => {
         height: '100%',
         marginRight: '10%',
 
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             width: '35%',
             height:'75%'
         }
@@ -55,7 +55,7 @@ export const HobbyName = glamorous.span(props => {
         width:'50%',
         fontSize: '12.5px',
 
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             fontSize: '10px'
         }
     }

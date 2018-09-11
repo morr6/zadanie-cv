@@ -16,7 +16,7 @@ export const ImageBox = glamorous.div(props => {
         height: '16.5%',
         width: '100%',
 
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             height: '13%',
         }
     }
@@ -38,7 +38,7 @@ export const Name = glamorous.div(props => {
         textAlign: 'center',
         color: '#383838',
 
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             fontSize: '25px',
             marginTop: '15%'
         }
@@ -56,7 +56,7 @@ export const Profession = glamorous.div(props => {
         background: '#383838',
         color: '#fdc935',
         
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             fontSize: '15px',
         }
     }

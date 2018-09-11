@@ -36,7 +36,7 @@ export const SectionContent = glamorous.div(props => {
         textAlign: 'left',
         margin: '5% auto',
         
-        '@media screen and (max-width:1024px)': {
+        '@media screen and (max-width:980px)': {
             fontSize: '8px',
         }
 
