@@ -65,7 +65,13 @@ export const SkillKnowledge = glamorous.div(props => {
         height:'40px',
         width: '40px',
         float: 'left',
-        fontWeight: '800'
+        fontWeight: '800',
+
+        '@media screen and (max-width:380px)': {
+            fontSize: '8px',
+            height: '20px',
+            width: '20px'
+        }
     }
 })
 export const SkillName = glamorous.div(props => {
@@ -77,5 +83,11 @@ export const SkillName = glamorous.div(props => {
         float: 'left',
         height:'100%',
         width: '30px',
+
+        '@media screen and (max-width:380px)': {
+            fontSize: '8px',
+            height: '50%',
+            width: '10px'
+        }
     }
 })
