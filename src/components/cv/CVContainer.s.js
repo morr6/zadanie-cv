@@ -2,7 +2,6 @@ import glamorous from 'glamorous'
 
 export const CvContainer = glamorous.div(props => {
     return {
-        height: '90%',
         width: '32.5%',
         margin: 'auto',
         background: 'white',
