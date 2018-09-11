@@ -2,6 +2,7 @@ import glamorous from 'glamorous';
 
 export const PersonalInformationsContainer = glamorous.div(props => {
     return {
+        float:'left',
         height: '100%',
         width: '42%',
         background: '#fdc935',
