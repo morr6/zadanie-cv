@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const iconStyles = { 
     color: '#fdc935',
     fontSize: '30px',
-    '@media screen and (max-width:992px)': {
+    '@media screen and (maxWidth:992px)': {
         fontSize: '10px'
     }
 }
