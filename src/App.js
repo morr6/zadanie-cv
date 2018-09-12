@@ -30,6 +30,10 @@ class App extends Component {
     })
   }
 
+  repeatQuestions() {
+    this.setState({ mode: MODES.QUESTIONS })
+  }
+
   renderContent() {
     switch (this.state.mode) {
       case MODES.QUESTIONS: 
@@ -37,7 +41,7 @@ class App extends Component {
        case MODES.CV:
          return <CV />;
       case MODES.CV_UNAVAILABLE: 
-        return <LackOfAccess />
+        return <LackOfAccess repeat={ () => this.repeatQuestions() }/>
      }
   }
 

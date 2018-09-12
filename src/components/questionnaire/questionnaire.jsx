@@ -13,6 +13,7 @@ export class Questionnaire extends Component {
         }
     }
 
+    
     onAnswerClick(activeQuestion, answerId) {
         
         this.setState({ 

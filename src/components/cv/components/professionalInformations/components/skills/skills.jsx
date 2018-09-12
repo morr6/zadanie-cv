@@ -18,8 +18,8 @@ const iconStyles = {
 export class Skills extends Component {
 
     renderSkillKnowledgeBorder(percent) {
-        return <svg viewBox="0 0 37 37">
-            <path
+        return <svg id='elo'viewBox="0 0 37 37">
+            <path 
                 d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -28,7 +28,7 @@ export class Skills extends Component {
                 strokeWidth="5"
                 strokeDasharray='100'
             />
-            <path
+            <path id='elo'
                 d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -38,12 +38,11 @@ export class Skills extends Component {
                 strokeDasharray={percent + ',100'}
             />
             <animate 
+                xLinkHref="#elo"
                 attributeName="strokeDasharray"
-                from='0,100 '
+                from='0,100'
                 to={percent + ',100'}
                 dur='2s'
-                begin="click"
-                fill="freeze"   
             />
         </svg>
     }
