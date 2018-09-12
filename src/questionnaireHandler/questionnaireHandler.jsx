@@ -1,5 +1,5 @@
 export const questions = [{
-    question: 'The largest planet in the solar system is?',
+    question: 'The largest planet in the Solar System is?',
     id: 1,
     answers: [
         { id: 1, answer: 'Saturn' }, 
