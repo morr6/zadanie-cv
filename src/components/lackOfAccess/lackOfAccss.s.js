@@ -19,7 +19,7 @@ export const AccessMessage = glamorous.div(props => {
         animation: `${animation} 2s infinite ease-in-out alternate`,
 
         '@media screen and (max-width: 1024px)': {
-            fontsi: '40px'
+            fontSize: '40px'
         }
     }
 })
@@ -36,8 +36,9 @@ export const RepeatButton = glamorous.div(props => {
         textAlign: 'center',
 
         '@media screen and (max-width:1024px)': {
-            fontSize: '15px',
-            width: '80%',
+            width: '80%', 
+            fontSize: '25px',
+            height: '50px',
             margin: '40% auto 0 auto'
         },
 
