@@ -68,8 +68,8 @@ export const SkillBorder = glamorous.div(props => {
         position: 'absolute', 
 
         '@media screen and (max-width:380px)': {
-            height: '20px',
-            width: '20px',
+            height: '40px',
+            width: '40px',
         }
     }
 })
