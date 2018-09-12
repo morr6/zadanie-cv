@@ -24,7 +24,7 @@ export class Skills extends Component {
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 fill="none"
-                stroke="#666666"
+                stroke="#d4d4d4 "
                 strokeWidth="5"
                 strokeDasharray='100'
             />
