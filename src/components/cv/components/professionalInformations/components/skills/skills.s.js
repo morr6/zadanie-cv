@@ -55,7 +55,7 @@ export const SkillBox = glamorous.div(props => {
         float: 'left',
         margin: '20px 2.5px 20px 10px',
 
-        '@media screen and (max-width:380px)': {
+        '@media screen and (max-width:480px)': {
             margin: '10px 0 5px 0px'
         }
     }
@@ -68,7 +68,7 @@ export const SkillBorder = glamorous.div(props => {
         float: 'left',
         position: 'absolute', 
 
-        '@media screen and (max-width:380px)': {
+        '@media screen and (max-width:480px)': {
             height: '30px',
             width: '30px',
         }
@@ -85,7 +85,7 @@ export const SkillKnowledge = glamorous.div(props => {
         float: 'left',
         fontWeight: '800',
 
-        '@media screen and (max-width:380px)': {
+        '@media screen and (max-width:480px)': {
             fontSize: '8px',
             height: '30px',
             width: '30px',
@@ -102,7 +102,7 @@ export const SkillName = glamorous.div(props => {
         height:'60px',
         width: '25px',
 
-        '@media screen and (max-width:380px)': {
+        '@media screen and (max-width:480px)': {
             fontSize: '8px',
             alignItems: 'center',
             height: '30px',
