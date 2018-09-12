@@ -22,7 +22,7 @@ export class Skills extends Component {
             d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
-            fill="#a0a0a0"
+            fill="none"
             stroke="#fdc935"
             strokeWidth="5"
             strokeDasharray={percent +', 100'}
