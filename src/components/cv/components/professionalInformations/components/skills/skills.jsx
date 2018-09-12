@@ -8,6 +8,7 @@ import {SkillsContainer,
         SkillName,
         SkillBorder} from './skills.s';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { keyframes } from 'glamor';
 
 const iconStyles = {
     color: '#fdc935',
@@ -23,7 +24,7 @@ export class Skills extends Component {
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             fill="none"
-            stroke="#fdc935"
+            stroke="#afafaf"
             strokeWidth="5"
             strokeDasharray='100'
             />
@@ -32,9 +33,9 @@ export class Skills extends Component {
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             fill="none"
-            stroke="#afafaf"
+            stroke="#fdc935"
             strokeWidth="5"
-            strokeDasharray={ 100 - percent + ',100'}
+            strokeDasharray={percent + ',100'}
             />
         </svg>
     }
