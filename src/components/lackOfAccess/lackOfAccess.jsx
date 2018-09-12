@@ -6,9 +6,10 @@ export class LackOfAccess extends Component {
     render() {
         return(
             <MainContainer>
-                <AccessMessage> Brak dostępu </AccessMessage>
+                <AccessMessage> Access denied </AccessMessage>
                 <RepeatButton onClick={ () => this.props.repeat()}> 
-                    Try again 
+                    Try again
+
                 </RepeatButton>
             </MainContainer>
         )
