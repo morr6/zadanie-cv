@@ -29,7 +29,7 @@ export const RepeatButton = glamorous.div(props => {
         fontWeight: 'bold',
         cursor: 'pointer',
         fontSize: '25px',
-        padding: '20px',
+        padding: '10px 0',
         borderRadius: '50px',
         boxShadow: '0px 10px 20px 2px grey',
         marginTop: '40%',
@@ -38,7 +38,6 @@ export const RepeatButton = glamorous.div(props => {
         '@media screen and (max-width:1024px)': {
             width: '80%', 
             fontSize: '25px',
-            height: '30px',
             margin: '40% auto 0 auto'
         },
 
