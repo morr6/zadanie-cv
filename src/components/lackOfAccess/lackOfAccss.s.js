@@ -26,6 +26,7 @@ export const AccessMessage = glamorous.div(props => {
 
 export const RepeatButton = glamorous.div(props => {
     return {
+        background: 'white',
         fontWeight: 'bold',
         cursor: 'pointer',
         fontSize: '25px',
