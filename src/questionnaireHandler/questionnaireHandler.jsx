@@ -9,7 +9,7 @@ export const questions = [{
     correctAnswerId: 3,
     answerId: null
 },{
-    question: 'How many planets are in the solar system?',
+    question: 'How many planets are in the Solar System?',
     id: 2,
     answers: [
         { id:1, answer: '7' },
@@ -19,7 +19,7 @@ export const questions = [{
     correctAnswerId: 2,
     answerId: null
 },{
-    question: 'Which of these planets is closest to the sun?',
+    question: 'Which of these planets is closest to the Sun?',
     id: 3,
     answers: [
         { id:1, answer: 'Mercury' },
