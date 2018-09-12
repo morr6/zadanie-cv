@@ -61,7 +61,7 @@ export const SkillBox = glamorous.div(props => {
 })
 
 export const SkillBorder = glamorous.div(props => {
-    return {    
+    return {  
         height: '60px',
         width: '60px',
         float: 'left',
@@ -73,7 +73,6 @@ export const SkillBorder = glamorous.div(props => {
         }
     }
 })
-
 export const SkillKnowledge = glamorous.div(props => {
     return {
         position: 'relative',

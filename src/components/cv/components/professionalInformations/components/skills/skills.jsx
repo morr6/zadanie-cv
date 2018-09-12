@@ -25,7 +25,16 @@ export class Skills extends Component {
             fill="none"
             stroke="#fdc935"
             strokeWidth="5"
-            strokeDasharray={percent +', 100'}
+            strokeDasharray='100'
+            />
+            <path
+            d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            fill="none"
+            stroke="#afafaf"
+            strokeWidth="5"
+            strokeDasharray={ 100 - percent + ',100'}
             />
         </svg>
     }
@@ -54,9 +63,9 @@ export class Skills extends Component {
                     </SkillBox>
                     <SkillBox>
                         <SkillBorder>
-                            { this.renderSkillKnowledgeBorder(60) }
+                            { this.renderSkillKnowledgeBorder(50) }
                         </SkillBorder>
-                        <SkillKnowledge> 60% </SkillKnowledge>
+                        <SkillKnowledge> 50% </SkillKnowledge>
                         <SkillName> C# </SkillName>
                     </SkillBox>
                     <SkillBox>
