@@ -59,15 +59,24 @@ export const SkillBox = glamorous.div(props => {
         }
     }
 })
+
+export const SkillBorder = glamorous.div(props => {
+    return {    
+        height: '60px',
+        width: '60px',
+        float: 'left',
+        position: 'absolute'
+    }
+})
+
 export const SkillKnowledge = glamorous.div(props => {
     return {
+        position: 'relative',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: '50%',
-        border: '8px solid #fcca35',
-        height:'40px',
-        width: '40px',
+        height:'60px',
+        width: '60px',
         float: 'left',
         fontWeight: '800',
 
@@ -81,12 +90,12 @@ export const SkillKnowledge = glamorous.div(props => {
 })
 export const SkillName = glamorous.div(props => {
     return {
-        marginLeft: '7.5px',
+        marginLeft: '5px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'left',
         float: 'left',
-        height:'100%',
+        height:'60px',
         width: '30px',
 
         '@media screen and (max-width:380px)': {
