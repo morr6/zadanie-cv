@@ -3,12 +3,7 @@ import {ProfileContainer,
         SectionIcon,
         SectionName,
         SectionContent} from './profile.s'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const iconStyles = {
-    color: '#fdc935',
-    fontSize: matchMedia('(max-width:450px)').matches ? '20px' : '40px'
-}
+import {StyledFAI} from '../../../../../../assets/icons/iconsStyles'
 
 export class Profile extends Component {
 
@@ -16,7 +11,7 @@ export class Profile extends Component {
         return(
             <ProfileContainer>
                 <SectionIcon> 
-                        <FontAwesomeIcon icon='user' style={iconStyles} />
+                        <StyledFAI icon='user' />
                 </SectionIcon>
                 <SectionName> PROFILE </SectionName>
                 <SectionContent>

@@ -1,4 +1,5 @@
 import glamorous from 'glamorous';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SkillsContainer = glamorous.div(props => {
     return {

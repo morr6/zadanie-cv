@@ -3,12 +3,7 @@ import {ExperienceContainer,
         SectionIcon,
         SectionName,
         SectionContent} from './experience.s';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const iconStyles = {
-    color: '#fdc935',
-    fontSize: matchMedia('(max-width:450px)').matches ? '20px' : '40px'
-}
+import {StyledFAI} from '../../../../../../assets/icons/iconsStyles'
 
 export class Experience extends Component {
 
@@ -16,7 +11,7 @@ export class Experience extends Component {
         return(
             <ExperienceContainer>
                 <SectionIcon>
-                    <FontAwesomeIcon icon='tv' style={iconStyles} />
+                    <StyledFAI icon='tv' />
                 </SectionIcon>
                 <SectionName> EXPERIENCE </SectionName>
                 <SectionContent>

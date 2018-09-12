@@ -7,12 +7,7 @@ import {SkillsContainer,
         SkillKnowledge,
         SkillName,
         SkillBorder} from './skills.s';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const iconStyles = {
-    color: '#fdc935',
-    fontSize: matchMedia('(max-width:450px)').matches ? '20px' : '40px'
-}
+import {StyledFAI} from '../../../../../../assets/icons/iconsStyles'
 
 export class Skills extends Component {
 
@@ -43,7 +38,7 @@ export class Skills extends Component {
         return (
             <SkillsContainer>
                 <SectionIcon>
-                    <FontAwesomeIcon icon='cogs' style={iconStyles} />
+                    <StyledFAI icon='cogs' />
                 </SectionIcon>
                 <SectionName> SKILLS </SectionName>
                 <SectionContent>

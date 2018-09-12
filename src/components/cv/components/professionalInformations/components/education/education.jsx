@@ -3,12 +3,7 @@ import {EducationContainer,
         SectionIcon,
         SectionName,
         SectionContent} from './education.s'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const iconStyles = {
-    color: '#fdc935',
-    fontSize: matchMedia('(max-width:450px)').matches ? '20px' : '40px'
-}
+import {StyledFAI} from '../../../../../../assets/icons/iconsStyles'
 
 export class Education extends Component {
 
@@ -16,7 +11,7 @@ export class Education extends Component {
         return(
             <EducationContainer>
                 <SectionIcon> 
-                        <FontAwesomeIcon icon='graduation-cap' style={iconStyles} />
+                        <StyledFAI icon='graduation-cap' />
                 </SectionIcon>
                 <SectionName> EDUCATION </SectionName>
                 <SectionContent>

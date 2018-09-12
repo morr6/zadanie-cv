@@ -11,7 +11,9 @@ export class LackOfAccess extends Component {
                 <ReactCSSTransitionGroup
                     transitionName="access-denied"
                     transitionAppear={true}
-                    transitionAppearTimeout={500}>
+                    transitionAppearTimeout={500}
+                    transitionEnter={false}
+                    transitionLeave={false}>
             
                     <AccessMessage> 
                         Access denied 
