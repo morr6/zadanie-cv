@@ -44,7 +44,7 @@ export const SectionContent = glamorous.div(props => {
         width: '90%',
         fontSize: '10.5px',
         textAlign: 'left',
-        margin: '5% auto'
+        margin: '5%'
 
     }
 });
