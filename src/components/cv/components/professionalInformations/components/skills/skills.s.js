@@ -86,9 +86,9 @@ export const SkillKnowledge = glamorous.div(props => {
         fontWeight: '800',
 
         '@media screen and (max-width:380px)': {
-            fontSize: '8px',
-            height: '20px',
-            width: '20px',
+            fontSize: '10px',
+            height: '40px',
+            width: '40px',
         }
     }
 })
@@ -103,10 +103,10 @@ export const SkillName = glamorous.div(props => {
         width: '30px',
 
         '@media screen and (max-width:380px)': {
-            fontSize: '8px',
+            fontSize: '10px',
             alignItems: 'flex-end',
-            height: '20px',
-            marginLeft: '3px',
+            height: '40px',
+            marginLeft: '5px',
         }
     }
 })
