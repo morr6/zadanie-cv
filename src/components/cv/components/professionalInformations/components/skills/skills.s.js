@@ -104,9 +104,9 @@ export const SkillName = glamorous.div(props => {
 
         '@media screen and (max-width:380px)': {
             fontSize: '10px',
-            alignItems: 'flex-end',
+            alignItems: 'center',
             height: '40px',
-            marginLeft: '5px',
+            marginLeft: '3px',
         }
     }
 })
