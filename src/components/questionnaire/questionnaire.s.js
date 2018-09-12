@@ -56,9 +56,10 @@ export const Answer = glamorous.div(props => {
             fontSize: '25px',
             height: '50px'
         },
-
-        ':hover': {
-            transform: 'scale(1.1)'
+        '@media screen and (min-width: 1240px)': {
+            ':hover': {
+                transform: 'scale(1.1)'
+            }
         }
     }
 })
