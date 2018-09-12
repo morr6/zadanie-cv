@@ -5,7 +5,7 @@ export const SkillsContainer = glamorous.div(props => {
         width: '100%',
         marginTop: '7.5%'
     }
-});
+}); 
 export const SectionIcon = glamorous.div(props => {
     return {
         display: 'flex',
@@ -20,6 +20,7 @@ export const SectionIcon = glamorous.div(props => {
         }
     }
 })
+
 export const SectionName = glamorous.div(props => {
     return {
         marginBottom: '5%',

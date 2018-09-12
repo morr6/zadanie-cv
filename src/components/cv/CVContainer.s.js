@@ -12,5 +12,6 @@ export const CvContainer = glamorous.div(props => {
             height: '100%'
         }
     }
-})
+});
+
 

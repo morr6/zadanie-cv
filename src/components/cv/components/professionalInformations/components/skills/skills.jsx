@@ -8,7 +8,6 @@ import {SkillsContainer,
         SkillName,
         SkillBorder} from './skills.s';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { keyframes } from 'glamor';
 
 const iconStyles = {
     color: '#fdc935',
@@ -18,7 +17,7 @@ const iconStyles = {
 export class Skills extends Component {
 
     renderSkillKnowledgeBorder(percent) {
-        return <svg id='elo'viewBox="0 0 37 37">
+        return <svg viewBox="0 0 37 37">
             <path 
                 d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -28,7 +27,7 @@ export class Skills extends Component {
                 strokeWidth="5"
                 strokeDasharray='100'
             />
-            <path id='elo'
+            <path
                 d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -36,13 +35,6 @@ export class Skills extends Component {
                 stroke="#fdc935"
                 strokeWidth="5"
                 strokeDasharray={percent + ',100'}
-            />
-            <animate 
-                xLinkHref="#elo"
-                attributeName="strokeDasharray"
-                from='0,100'
-                to={percent + ',100'}
-                dur='2s'
             />
         </svg>
     }

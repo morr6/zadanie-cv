@@ -16,10 +16,10 @@ export class CV extends Component {
                     transitionAppearTimeout={0}
                     transitionEnter={false}
                     transitionLeave={false}>
-             
-                    <PersonalInformations />
-                    <ProfessionalInformations />
-                
+                        <div>
+                            <PersonalInformations />
+                            <ProfessionalInformations />
+                        </div>
                 </ReactCSSTransitionGroup>
             </CvContainer>
         )

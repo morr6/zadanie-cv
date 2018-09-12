@@ -1,10 +1,4 @@
 import glamorous from 'glamorous';
-import { css } from 'glamor';   
-
-const renderAnimation = css.keyframes({
-    '0%': { marginLeft: '-50%' },
-    '100%' : { marginLeft: 'auto'}
-})
 
 export const QuestionnaireContainer = glamorous.div(props => {
     return {    

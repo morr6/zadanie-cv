@@ -35,8 +35,6 @@ export class Questionnaire extends Component {
     render() {        
         const activeQuestion = QuestionModel.getQuestionById(this.state.questions, this.state.activeQuestionId);
 
-        console.log(this.state.questions);
-
         return(
             <QuestionnaireContainer>
                 Pytanie { activeQuestion.id }/{ this.state.questions.length }

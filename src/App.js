@@ -45,6 +45,8 @@ class App extends Component {
          return <CV />;
       case MODES.CV_UNAVAILABLE: 
         return <LackOfAccess repeat={ () => this.repeatQuestions() }/>
+      default:
+        break
      }
   }
 
@@ -53,8 +55,9 @@ class App extends Component {
       <ReactCSSTransitionGroup
         transitionName="questions"
         transitionAppear={true}
-        transitionAppearTimeout={500}>
-
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}>
         <div className="App"> 
             { this.renderContent() }
         </div>
