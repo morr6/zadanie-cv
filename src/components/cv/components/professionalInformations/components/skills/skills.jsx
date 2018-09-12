@@ -20,22 +20,30 @@ export class Skills extends Component {
     renderSkillKnowledgeBorder(percent) {
         return <svg viewBox="0 0 37 37">
             <path
-            d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            fill="none"
-            stroke="#afafaf"
-            strokeWidth="5"
-            strokeDasharray='100'
+                d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#afafaf"
+                strokeWidth="5"
+                strokeDasharray='100'
             />
             <path
-            d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            fill="none"
-            stroke="#fdc935"
-            strokeWidth="5"
-            strokeDasharray={percent + ',100'}
+                d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#fdc935"
+                strokeWidth="5"
+                strokeDasharray={percent + ',100'}
+            />
+            <animate 
+                attributeName="strokeDasharray"
+                from='0,100 '
+                to={percent + ',100'}
+                dur='2s'
+                begin="click"
+                fill="freeze"   
             />
         </svg>
     }
