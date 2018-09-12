@@ -24,6 +24,10 @@ export const Question = glamorous.div(props => {
         margin: '5% auto',
         fontSize: '35px',
         textAlign: 'center',
+
+        '@media screen and (max-width:1024px)': {
+            fontSize: '15px'
+        }
     }
 })
 export const Answer = glamorous.div(props => {
@@ -41,6 +45,11 @@ export const Answer = glamorous.div(props => {
         color: 'black',
         borderRadius: '50px',
         boxShadow: '0px 6px 20px 2px #afafaf',
+
+        '@media screen and (max-width: 1024px)': {
+            width: '100%', 
+            fontSize: '25px'
+        },
 
         ':hover': {
             transform: 'scale(1.1)'
