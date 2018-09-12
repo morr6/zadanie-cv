@@ -31,7 +31,7 @@ export const RepeatButton = glamorous.div(props => {
         fontSize: '25px',
         padding: '10px 0',
         borderRadius: '50px',
-        boxShadow: '0px 10px 20px 2px grey',
+        boxShadow: '0px 10px 5px 2px grey',
         marginTop: '40%',
         textAlign: 'center',
 
