@@ -68,8 +68,8 @@ export const SkillBorder = glamorous.div(props => {
         position: 'absolute', 
 
         '@media screen and (max-width:380px)': {
-            height: '30px',
-            width: '30px',
+            height: '40px',
+            width: '40px',
         }
     }
 })
@@ -86,8 +86,8 @@ export const SkillKnowledge = glamorous.div(props => {
 
         '@media screen and (max-width:380px)': {
             fontSize: '8px',
-            height: '30px',
-            width: '30px',
+            height: '40px',
+            width: '40px',
         }
     }
 })
@@ -104,7 +104,7 @@ export const SkillName = glamorous.div(props => {
         '@media screen and (max-width:380px)': {
             fontSize: '8px',
             alignItems: 'center',
-            height: '30px',
+            height: '40px',
             marginLeft: '3px',
         }
     }
