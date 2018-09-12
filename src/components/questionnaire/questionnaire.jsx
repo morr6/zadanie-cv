@@ -13,10 +13,6 @@ export class Questionnaire extends Component {
         }
     }
 
-    updateQuestionsState(answerId) {
-    
-    }
-
     onAnswerClick(activeQuestion, answerId) {
         
         this.setState({ 

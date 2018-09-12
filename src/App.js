@@ -8,28 +8,37 @@ import {faEnvelope,faPhone,faHome,faGlobe,faPlane,faBook,faMusic,
   faPenFancy,faCogs,faUser,faGraduationCap,faTv
 } from '@fortawesome/free-solid-svg-icons'
 
+const MODES = {
+  QUESTIONS: 1,
+  CV: 2,
+  CV_UNAVAILABLE: 3 
+}
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      isCvAvailable: true
+      mode: MODES.QUESTIONS
     }
   }
 
   isCvAvailable(access) { 
-    this.setState({ isCvAvailable: access })
+    this.setState({ mode: access ? MODES.CV : 
+      !access ? MODES.CV_UNAVAILABLE :
+      MODES.QUESTIONS
+    })
   }
 
   renderContent() {
-    if (this.state.isCvAvailable === true) {
-      return <CV />
-    } else if (this.state.isCvAvailable === false) {
-      return <LackOfAccess />
-    } else {
-      return <Questionnaire setCvAccess={ (access) => this.isCvAvailable(access) } />
-    }
+    switch (this.state.mode) {
+      case MODES.QUESTIONS: 
+        return <Questionnaire setCvAccess={ (access) => this.isCvAvailable(access) } />;
+       case MODES.CV:
+         return <CV />;
+      case MODES.CV_UNAVAILABLE: 
+        return <LackOfAccess />
+     }
   }
 
   render() { 

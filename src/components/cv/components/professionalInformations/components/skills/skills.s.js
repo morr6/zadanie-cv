@@ -99,7 +99,7 @@ export const SkillName = glamorous.div(props => {
         justifyContent: 'left',
         float: 'left',
         height:'60px',
-        width: '30px',
+        width: '25px',
 
         '@media screen and (max-width:380px)': {
             fontSize: '8px',
