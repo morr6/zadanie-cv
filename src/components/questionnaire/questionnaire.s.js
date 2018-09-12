@@ -14,6 +14,11 @@ export const QuestionnaireContainer = glamorous.div(props => {
         margin: 'auto', 
         borderRadius: '50px',
         padding: '2%',
+
+        '@media screen and (max-width:1024px)': {
+            width: '90%',
+        }
+
     }
 })
 
@@ -26,7 +31,7 @@ export const Question = glamorous.div(props => {
         textAlign: 'center',
 
         '@media screen and (max-width:1024px)': {
-            fontSize: '15px'
+            fontSize: '25px'
         }
     }
 })
@@ -48,7 +53,8 @@ export const Answer = glamorous.div(props => {
 
         '@media screen and (max-width: 1024px)': {
             width: '100%', 
-            fontSize: '25px'
+            fontSize: '25px',
+            height: '50px'
         },
 
         ':hover': {

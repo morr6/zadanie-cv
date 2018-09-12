@@ -18,7 +18,7 @@ export const AccessMessage = glamorous.div(props => {
         fontSize: '70px',
         animation: `${animation} 2s infinite ease-in-out alternate`,
 
-        '@media screen and (max-width: 1024)': {
+        '@media screen and (max-width: 1024px)': {
             fontsi: '40px'
         }
     }
@@ -37,6 +37,8 @@ export const RepeatButton = glamorous.div(props => {
 
         '@media screen and (max-width:1024px)': {
             fontSize: '15px',
+            width: '80%',
+            margin: '40% auto 0 auto'
         },
 
         ':hover': {
