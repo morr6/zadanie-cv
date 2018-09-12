@@ -11,6 +11,7 @@
     "glamor": "^2.20.40",
     "glamorous": "^4.13.1",
     "react": "^16.5.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
@@ -20,8 +21,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   }
 }

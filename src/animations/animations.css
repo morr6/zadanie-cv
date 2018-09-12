@@ -1,0 +1,28 @@
+.questions-appear {
+    opacity: 0.01;
+  }
+  
+.questions-appear.questions-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.cv-mount-appear {
+  transform: scale(0)
+  
+}
+
+.cv-mount-appear.cv-mount-appear-active {
+  transform: scale(1);
+  transition: transform .35s ease-in;
+}
+
+.access-denied-appear {
+  opacity: 0.01;
+  
+}
+
+.access-denied-appear.access-denied-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

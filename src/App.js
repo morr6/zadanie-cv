@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import './animations/animations.css'
 import { Questionnaire } from './components/questionnaire/questionnaire';
 import { LackOfAccess } from './components/lackOfAccess/lackOfAccess';
 import { CV } from './components/cv/CVContainer';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faEnvelope,faPhone,faHome,faGlobe,faPlane,faBook,faMusic,
-  faPenFancy,faCogs,faUser,faGraduationCap,faTv
-} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope,faPhone,faHome,
+        faGlobe,faPlane,faBook,faMusic,
+        faPenFancy,faCogs,faUser,faGraduationCap,
+        faTv } from '@fortawesome/free-solid-svg-icons';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const MODES = {
   QUESTIONS: 1,
@@ -47,9 +50,16 @@ class App extends Component {
 
   render() { 
     return (
-      <div className="App"> 
-        { this.renderContent() }
-      </div>
+      <ReactCSSTransitionGroup
+        transitionName="questions"
+        transitionAppear={true}
+        transitionAppearTimeout={500}>
+
+        <div className="App"> 
+            { this.renderContent() }
+        </div>
+      
+      </ReactCSSTransitionGroup>
     )
   }
 }
