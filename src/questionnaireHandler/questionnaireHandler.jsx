@@ -1,15 +1,15 @@
 export const questions = [{
-    question: 'Największa planeta układu słonecznego to?',
+    question: 'The largest planet in the solar system is?',
     id: 1,
     answers: [
         { id: 1, answer: 'Saturn' }, 
-        { id: 2, answer: 'Uran' },
-        { id: 3, answer: 'Jowisz' }
+        { id: 2, answer: 'Uranus' },
+        { id: 3, answer: 'Jupiter' }
     ],
     correctAnswerId: 3,
     answerId: null
 },{
-    question: 'Ile planet znajduję się w układzie słonecznym?',
+    question: 'How many planets are in the solar system?',
     id: 2,
     answers: [
         { id:1, answer: '7' },
@@ -19,12 +19,12 @@ export const questions = [{
     correctAnswerId: 2,
     answerId: null
 },{
-    question: 'Przyjmiecie mnie do pracy?',
+    question: 'Which of these planets is closest to the sun?',
     id: 3,
     answers: [
-        { id:1, answer: 'Tak' },
-        { id:2, answer: 'Tak' },
-        { id:3, answer: 'Tak' }
+        { id:1, answer: 'Mercury' },
+        { id:2, answer: 'Venus' },
+        { id:3, answer: 'Mars' }
     ],
     correctAnswerId: 1,
     answerId: null

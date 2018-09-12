@@ -2,10 +2,14 @@ import glamorous from 'glamorous';
 
 export const PersonalInformationsContainer = glamorous.div(props => {
     return {
-        height: '100%',
+        float:'left',
         width: '42%',
         background: '#fdc935',
-        paddingTop: '10%'
+        paddingTop: '7.5%',
+
+        '@media screen and (max-width:980px)': {
+            paddingBottom: '10%'
+        }
     }
 })
 
@@ -15,6 +19,10 @@ export const ImageBox = glamorous.div(props => {
         justifyContent: 'center',
         height: '16.5%',
         width: '100%',
+
+        '@media screen and (max-width:980px)': {
+            height: '13%',
+        }
     }
 })
 export const Image = glamorous.img(props => {
@@ -28,11 +36,16 @@ export const Image = glamorous.img(props => {
 })
 export const Name = glamorous.div(props => {
     return {
-        marginTop: '10%',
+        marginTop: '5%',
         fontWeight: 'bold',
-        fontSize: '45px',
+        fontSize: '50px',
         textAlign: 'center',
-        color: '#383838'
+        color: '#383838',
+
+        '@media screen and (max-width:980px)': {
+            fontSize: '25px',
+            marginTop: '15%'
+        }
     }
 })
 export const Profession = glamorous.div(props => {
@@ -41,9 +54,15 @@ export const Profession = glamorous.div(props => {
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
-        height: '4%',
+        height: '35px',
+        fontSize: '20px',
+        fontStyle: 'italic',
         background: '#383838',
-        color: '#fdc935' 
+        color: '#fdc935',
+        
+        '@media screen and (max-width:980px)': {
+            fontSize: '15px',
+        }
     }
 })
 
@@ -53,6 +72,7 @@ export const SocialMedia = glamorous.div(props => {
         width: '40%',
         float: 'left',
         margin: '15% 2.5% 2.5% 5%',
-        fontSize: '11px'
+        fontSize: '11px',
+        paddingBottom: '5%'
     }
 })

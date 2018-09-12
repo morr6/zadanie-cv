@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconStyles = { 
     color: '#fdc935',
-    fontSize: '30px'
+    fontSize: matchMedia('(max-width:980px)').matches ? '15px' : '25px'
 }
 
 export class HobbiesContainer extends Component {
@@ -26,7 +26,7 @@ export class HobbiesContainer extends Component {
                 </HobbyBox>
                 <HobbyBox>
                     <HobbyIcon>  
-                        <FontAwesomeIcon icon="pen-fancy" style={iconStyles} />
+                        <FontAwesomeIcon icon="book" style={iconStyles} />
                     </HobbyIcon>
                     <HobbyName> Reading </HobbyName>
                 </HobbyBox>
@@ -34,11 +34,11 @@ export class HobbiesContainer extends Component {
                     <HobbyIcon>  
                         <FontAwesomeIcon icon="music" style={iconStyles} />
                     </HobbyIcon> 
-                    <HobbyName  > Music </HobbyName>
+                    <HobbyName> Music </HobbyName>
                 </HobbyBox>
                 <HobbyBox>
                     <HobbyIcon>  
-                        <FontAwesomeIcon icon="book" style={iconStyles} />
+                        <FontAwesomeIcon icon="pen-fancy" style={iconStyles} />
                     </HobbyIcon>
                     <HobbyName> Writing </HobbyName>
                 </HobbyBox>
